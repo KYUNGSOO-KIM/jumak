@@ -22,4 +22,5 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomeView.as_view(),name='home'),
+    path('homepage/',include('homepage.urls'), name='homepage'),
 ]

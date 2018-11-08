@@ -1,0 +1,9 @@
+#rolling_img { 
+	position: relative; 
+	width: 400px; 
+	 }
+#rolling_img img { 
+	position: absolute; 
+	top:90px; 
+	width: 500px;
+	 }

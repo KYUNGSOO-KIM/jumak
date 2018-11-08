@@ -1,0 +1,57 @@
+#header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+
+}	
+
+#menu {
+    
+    background-color: green;
+    
+    padding: 5px;
+    background-color: yellow;
+    font-size:20px;
+    text-align: center;
+}
+div#menu.on{
+    position: fixed;
+    top: 0;
+}
+
+a:link {
+    color: black; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+li {
+
+    display : inline;
+    padding: 70px;
+}
+
+footer {
+    padding : 10px;
+    text-align: center;
+}
