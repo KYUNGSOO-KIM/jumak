@@ -6,15 +6,23 @@
 {% block extrastyle %} {% static "css/home.css" %} {% endblock %}
 
 {% block content %}
-home
-<li id="rolling_img">       
-        <img src="{% static 'img/nokdu.jpeg' %}">
-        <img src="{% static 'img/codari.jpeg' %}">
-        <img src="{% static 'img/dotori.jpeg' %}">
+<div >
+
+        <img style="width:60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid white;
+        border-radius: 10px;
+        " src="{% static 'img/main.jpg' %}">
+      </div>
 
 
 {% endblock %}
 
 {% block footer %}
-<div id="footer">Since 2011 All rights reserved</div>
+<div id="footer" style="padding:30px;text-align: center;font-size: 30px;font-family: 'Nanum Pen Script', cursive;">
+	주 소 : 경기도 화성시 동탄면 장지리 834-3 주막보리밥<br>
+	전 화 번 호 : 031-374-3104
+</div>
 {% endblock %}

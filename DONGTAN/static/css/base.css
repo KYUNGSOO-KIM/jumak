@@ -1,11 +1,16 @@
 #header {
-    background-color: #666;
+    
     padding: 30px;
     text-align: center;
-    font-size: 40px;
-    color: black;
+    font-size: 50px;
+    color: white;
+
 
 }	
+
+h1 {
+    color:orange;
+}
 
 #menu {
     
@@ -49,6 +54,7 @@ li {
 
     display : inline;
     padding: 70px;
+
 }
 
 footer {

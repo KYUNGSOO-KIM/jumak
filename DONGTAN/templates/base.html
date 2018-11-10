@@ -6,71 +6,33 @@
 		{% block titie %}BASE{% endblock %}
 	</title>
 	{% load staticfiles %}
-	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+	<link rel="stylesheet"  type="text/css" href="{% static 'css/base.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% block extrastyle %}{% endblock %}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript">
-	jQuery(function() {
-    var rolling_time = 3000;
-    var effect_time = 1000;
- 
-    var $rolling_img = $("#rolling_img > img");
-    $rolling_img.not(":first").hide();
- 
-    setInterval(rolling, rolling_time);
- 
-    function rolling()
-    {
-        $visible_img = $rolling_img.filter(":visible");
-        $visible_img.fadeOut(effect_time);
- 
-        $next_img = $visible_img.next();
-        if ($next_img.length === 0) {
-            $next_img = $rolling_img.filter(":first");
-        }
-        $next_img.fadeIn(effect_time);
-    }
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Dokdo|East+Sea+Dokdo|Nanum+Pen+Script&amp;subset=korean" rel="stylesheet">
 
-
-var $window = $(window)
- ,$sect1 = $('.section1')
- ,$menu = $('#menu')
-
-	$window.scroll(move)
-    
-    var sect1P = $sect1.position().top
-    var sect2P = $sect2.position().top
-    var sect3P = $sect3.position().top
-    var sect4P = $sect4.position().top
-    function move(){
-        var nowScroll = $window.scrollTop()//현재 스크롤(화면) 위치
-        console.log(nowScroll)
-        
-        if( nowScroll >= sect1P){
-        
-            $menu.addClass('on')
-        }else{
-            $menu.removeClass('on')
-        }
-    }
-        });
-</script>
 	
 </head>
 <body>
-	<div id="header" class="section1">
-		주 막 보 리 밥
-	</div>
-	<div id="menu">
-		<ul>
-			<li><a href="{% url 'home' %}"> 주막보리밥 </a></li>
-			<li><a href="{% url 'homepage:intro' %}">소 개</a></li>
-			<li><a href="{% url 'homepage:dish' %}">메 뉴</a></li>
-			<li><a href="{% url 'homepage:photo' %}">사 진</a></li>
-			
-		</ul>
-	</div>
+<div id="header" style="background-color: white; font-size:100px;font-family: 'East Sea Dokdo',cursive;">
+        주 막 보 리 밥
+    </div>
+
+<nav class="navbar" >
+    
+    <ul class="nav navbar-nav" >
+      <li class="active" style="font-size:40px;font-family: 'Nanum Pen Script', cursive;"><a href="{% url 'home' %}">주막 보리밥</a></li>
+      <li style="font-size:40px;font-family: 'Nanum Pen Script', cursive;"><a href="{% url 'homepage:intro' %}">소 개</a></li>
+      <li style="font-size:40px;font-family: 'Nanum Pen Script', cursive;"><a href="{% url 'homepage:dish' %}">메 뉴</a></li>
+      <li style="font-size:40px;font-family: 'Nanum Pen Script', cursive;"><a href="{% url 'homepage:photo' %}">사 진 첩</a></li>
+    </ul>
+
+</nav>
+
+<h1>orange?</h1>
     
 {% block content %}{% endblock %}
 {% block footer %}{% endblock %}
