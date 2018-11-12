@@ -10,15 +10,20 @@
 	<link rel="stylesheet" type="text/css" href="{% block extrastyle %}{% endblock %}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <!---<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> --->
     <link href="https://fonts.googleapis.com/css?family=Dokdo|East+Sea+Dokdo|Nanum+Pen+Script&amp;subset=korean" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+    <script src="js/bootstrap.min.js"></script>
 
 	
 </head>
 <body>
-<div id="header" style="background-color: white; font-size:100px;font-family: 'East Sea Dokdo',cursive;">
+  <div id="header" style=" font-size:100px;font-family: 'East Sea Dokdo',cursive;color:yellow;">
         주 막 보 리 밥
+  </div>
+    <div id="test1">
+      <h1>CSS</h1>
     </div>
 
 <nav class="navbar" >
@@ -32,7 +37,7 @@
 
 </nav>
 
-<h1>orange?</h1>
+
     
 {% block content %}{% endblock %}
 {% block footer %}{% endblock %}
